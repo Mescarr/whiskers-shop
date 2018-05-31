@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+         <title><?= $title ?></title>
+         <link rel="icon" type="image/jpg" href="public/images/favicon.jpg" />
+    </head>
+
+    <body>
+      <img src="public/images/banderole.jpg" />
+      <!--<?= $content ?>-->
+    </body>
+
+</html>
