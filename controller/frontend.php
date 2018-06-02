@@ -4,7 +4,7 @@
 
 function loginForm()
 {
-	require_once('view/loginFormView.php');
+	require_once('view/frontend/loginFormView.php');
 }
 
 function login($username, $password)

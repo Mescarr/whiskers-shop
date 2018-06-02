@@ -1,23 +1,30 @@
-<?php $title = 'Se Connecter'; ?>
+<?php
+  $title = 'Se Connecter';
+  $banner = NULL;
+  $link = '<link rel="stylesheet" href="public/css/loginFormView.css">'
+?>
 
-    <?php require('template.php'); ?>
+<?php ob_start(); ?>
+<div class="connection_block">
 
-    <div class="connection_block">
-        <h3>Connexion</h3>
+    <form method="post" action="?action=login" id="login_form">
 
-        <form method="post" action="?action=login">
-            <div class="inputForm">
-              <label>Pseudo</label> <br />
-              <input type="text" name="pseudo" />
-            </div>
+      <h3>Connexion</h3>
 
-            <div class="inputForm">
-              <label for="pass">Mot de passe</label> <br />
-              <input type="password" name="pass" />
-            </div>
+      <div class="inputForm">
+        <label>Nom d'utilisateur</label> <br />
+        <input type="text" name="username" id="username" required="required" autofocus />
+      </div>
 
-            <label for="connection_auto"><input type="checkbox" name="connection_auto" id="connection_auto" />Connexion Automatique</label> <br />
-            <input type="submit" value="Connexion" />
-        </form>
+      <div class="inputForm">
+        <label>Mot de passe</label> <br />
+        <input type="password" name="pass" id="password" required="required"/>
+      </div>
 
-    </div>
+      <label for="remember"><input type="checkbox" name="remember" id="remember" />Se souvenir de moi</label> <br />
+      <input type="submit" value="Se connecter" />
+    </form>
+</div>
+<?php $content = ob_get_clean(); ?>
+
+<?php require('template.php'); ?>

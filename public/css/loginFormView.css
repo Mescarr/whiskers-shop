@@ -1,0 +1,99 @@
+/* Main elements */
+
+body {
+    margin-top: 40vh;
+    /* pushed halfway up viewport */
+    transform: translateY(-50%);
+    /* pulled from half of his own height */
+    font-family: 'Aileron';
+}
+
+/* Font */
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.eot');    
+    src: url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'), 
+         url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.otf') format('otf'),
+         url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.woff') format('woff'),
+         url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.ttf') format('truetype'),
+         url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.svg#BebasNeue') format('svg');
+}
+
+#login_form{
+    color: #373737;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #9c9c9a;
+    box-shadow: 0px 0px 1em #99cb71;
+}
+
+/* Title */
+
+h3 {
+    text-align: center;
+    color: #373737;
+    text-transform: uppercase;
+    font-family: "Aileron", sans-serif;  
+    letter-spacing: 1.5px;
+    font-size: 1.8em;
+    line-height: 15px; 
+}
+
+/* Form */
+
+form {
+    text-align: center;
+}
+
+input {
+    transition: background .2s;
+    box-shadow: none;
+    border: 1px solid #bebebe;
+    background: #fff;
+}
+
+input[type=text],
+input[type=password] {
+    font-family: "Aileron", sans-serif;
+    width: 60%;
+    height: 20px;
+    padding: 0 6px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    border: 1px solid #99cb71;
+    box-shadow: 0px 0px 10px #99cb71;
+}
+
+input[type=submit] {
+    width: 78%;
+    height: 45px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-shadow: 0 1px 1px #333;
+    color: #fff;
+    font-family: "Aileron", sans-serif;
+    background-color: #99cb71;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+    transition: all 0.3s ease;
+    background-color: #B5EF86;
+    border: none;
+}
+
+input:focus {
+    outline:none;
+}
+
+#username,
+#password{
+    margin: 10px;
+}

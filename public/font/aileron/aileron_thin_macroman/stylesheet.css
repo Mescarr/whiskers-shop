@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'aileronthin';
+    src: url('Aileron-Thin-webfont.eot');
+    src: url('Aileron-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-Thin-webfont.woff2') format('woff2'),
+         url('Aileron-Thin-webfont.woff') format('woff'),
+         url('Aileron-Thin-webfont.ttf') format('truetype'),
+         url('Aileron-Thin-webfont.svg#aileronthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'aileronsemibold';
+    src: url('Aileron-SemiBold-webfont.eot');
+    src: url('Aileron-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-SemiBold-webfont.woff2') format('woff2'),
+         url('Aileron-SemiBold-webfont.woff') format('woff'),
+         url('Aileron-SemiBold-webfont.ttf') format('truetype'),
+         url('Aileron-SemiBold-webfont.svg#aileronsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

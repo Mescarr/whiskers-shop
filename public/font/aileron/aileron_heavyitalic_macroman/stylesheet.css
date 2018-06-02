@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'aileronheavy_italic';
+    src: url('Aileron-HeavyItalic-webfont.eot');
+    src: url('Aileron-HeavyItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-HeavyItalic-webfont.woff2') format('woff2'),
+         url('Aileron-HeavyItalic-webfont.woff') format('woff'),
+         url('Aileron-HeavyItalic-webfont.ttf') format('truetype'),
+         url('Aileron-HeavyItalic-webfont.svg#aileronheavy_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

@@ -2,13 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8" />
-         <title><?= $title ?></title>
-         <link rel="icon" type="image/jpg" href="public/images/favicon.jpg" />
+        <title><?= $title ?></title>
+    	<link rel="icon" type="image/jpg" href="public/images/favicon.jpg" />
+    	<?= $link ?>
     </head>
 
     <body>
-      <img src="public/images/banderole.jpg" />
-      <!--<?= $content ?>-->
+    	<img src="<?= $banner ?>" alt="" />
+    	<?= $content ?>
     </body>
 
 </html>
