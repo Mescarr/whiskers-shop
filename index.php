@@ -16,6 +16,9 @@ if (isset($_GET['action'])) {
             loginForm();
         }
     }
+    else{
+        header('Location: index.php?action=listProducts');
+    }
 }
 else {
     header('Location: index.php?action=listProducts');
