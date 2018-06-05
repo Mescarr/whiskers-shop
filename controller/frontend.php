@@ -9,12 +9,41 @@ function loginForm()
 
 function login($username, $password)
 {
-	$hash = password_hash($password, PASSWORD_DEFAULT);
+	require_once('model/connectUser.php');
 
-	connectUser($username, $hash);
+ 	//password_hash($password, PASSWORD_DEFAULT);
+
+	$user = connectUser($username, $password);
+
+	$user_id = $user->get_id();
+	$user_username = $user->get_username();
+
+	if (isset($user_id) && isset($user_username)) {
+		$_SESSION['id'] = $user_id;
+		$_SESSION['username'] = $user_username;
+
+		header('Location: index.php?action=listProducts');
+	}
+
+	else {
+		echo "T'es mauvais !";
+	}
 
 }
 
 function listProducts() {
 	require_once('view/frontend/listProductsView.php');
+}
+
+function checkSession() {
+	if(isset($_SESSION['id']) && $_SESSION['username']) {
+		return True;
+	}
+	else {
+		return False;
+	}
+}
+
+function destroySession() {
+	session_destroy();
 }
