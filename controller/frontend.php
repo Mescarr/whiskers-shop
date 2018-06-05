@@ -14,3 +14,7 @@ function login($username, $password)
 	connectUser($username, $hash);
 
 }
+
+function listProducts() {
+	require_once('view/frontend/listProductsView.php');
+}
