@@ -8,7 +8,6 @@
     </head>
 
     <body>
-    	<img src="<?= $banner ?>" alt="" />
     	<?= $content ?>
     </body>
 

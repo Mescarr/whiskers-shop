@@ -6,55 +6,274 @@
 
 <?php ob_start(); ?>
 <div id="listProductsBlock">
-    <div id="searchBlock">
 
+    <div id="headerBlock">
+      <div id="bannerBlock">
+        <img src="<?=$banner ?>" alt="" id="banner" />
+      </div>
+
+      <div id="loginBlock">
+        <?php
+          if(checkSession()) {
+
+              echo '<p>' . $_SESSION['username'] . '</p>';
+              echo '<p><a href="?action=logout">Se déconnecter</a></p>';
+          }
+          else{
+            ?>
+              <p id="login"><a href="?action=login">Se connecter</a></p>
+            <?php
+          }
+        ?>
+      </div>
     </div>
 
-    <div id="listProducts">
-      <div> <img src="imgproduit" />
-        <a href=".....">NomProduit</a>
-         Decription produit
-         Le Prix
-      </div>
 
-      <div> <img src="imgproduit" />
-        <a href=".....">NomProduit</a>
-         Decription produit
-         Le Prix
-      </div>
+    <div id="bodyBlock">
 
-      <div> <img src="imgproduit" />
-        <a href=".....">NomProduit</a>
-         Decription produit
-         Le Prix
-      </div>
+      <div id="listProducts">
 
-      <div> <img src="imgproduit" />
-        <a href=".....">NomProduit</a>
-         Decription produit
-         Le Prix
-      </div>
+        <div id="searchBlock">
+        zdadzad
+        </div>
+        <!--
+         Croquettes
+        <div> <img src="carniloveChat.jpg" />
+          <a href=".....">Carnilove pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
 
-    </div>
+        <div> <img src="carniloveChien.jpg" />
+          <a href=".....">Carnilove pour Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
 
-    <div id="loginBlock">
-      <?php
-        if(False /*checkSession()*/) {
+        <div> <img src="orijenChat.jpg" />
+          <a href=".....">Orijen pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
 
-            echo '<p>' . $_SESSION['username'] . '</p>';
-        }
-        else{
-          ?>
-            <a href="?action=login">Se connecter</a>
-          <?php
-        }
-      ?>
+        <div> <img src="carniloveChien.jpg" />
+          <a href=".....">Orijen pour Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="trueInstinctChat.jpg" />
+          <a href=".....">True Instinct pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="trueInsinctChien.jpg" />
+          <a href=".....">True Instinct pour Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="tasteWildChat.jpg" />
+          <a href=".....">Taste of the Wild pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="tasteWildChien.jpg" />
+          <a href=".....">Taste of the Wild pour Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="bunnyReveHamster.jpg" />
+          <a href=".....">Bunny Reve pour Hamster</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="cuniLapin.jpg" />
+          <a href=".....">Cuni Complete Adulte pour Lapin</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="sssRat.jpg" />
+          <a href=".....">Supreme Science Selective pour Rats</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="sssSouris.jpg" />
+          <a href=".....">Supreme Science Selective pour Souris</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+
+        Hygiene
+        <div> <img src="public/images/hygiene/brosseChat.jpg" />
+          <a href=".....">Brosse pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/hygiene/brosseChien.jpg" />
+          <a href=".....">Brosse pour Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/hygiene/peigneChat.jpg" />
+          <a href=".....">Peigne pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/hygiene/peigneChien.jpg" />
+          <a href=".....">Peigne pour Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/hygiene/antipuceChat.jpg" />
+          <a href=".....">Anti-Puces pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/hygiene/antipuceChien.jpg" />
+          <a href=".....">Anti-Puces pour Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/hygiene/LitiereChat.jpg" />
+          <a href=".....">Litiere pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/hygiene/sacFraicheur.jpg" />
+          <a href=".....">Sacs Fraicheur pour Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/hygiene/litiereRongeur.jpg" />
+          <a href=".....">Cuni Complete Adulte pour Lapin</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/hygiene/sableBain.jpg" />
+          <a href=".....">Sable de Bain pour Hamster</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/hygiene/brosseRongeur.jpg" />
+          <a href=".....">Brosse pour Rongeurs</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/hygiene/coupeGriffe.jpg" />
+          <a href=".....">Coupe Griffe pour Rongeurs</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+
+         Accessoires
+        <div> <img src="public/images/accessoire/laisse.jpg" />
+          <a href=".....">Laisse pour Chat et Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/collierChien.jpg" />
+          <a href=".....">Collier pour Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/harnaisChat.jpg" />
+          <a href=".....">Harnais pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/harnaisChien.jpg" />
+          <a href=".....">Harnais pour Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/gamelleChat.jpg" />
+          <a href=".....">Gamelle pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/gamelleChien.jpg" />
+          <a href=".....">Gamelle pour Chien</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/griffoire.jpg" />
+          <a href=".....">Griffoire pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/litiereChat.jpg" />
+          <a href=".....">Bac a Litiere pour Chat</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/gamelleRongeur.jpg" />
+          <a href=".....">Gamelle pour Rongeurs</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/biberonRongeur.jpg" />
+          <a href=".....">Biberon pour Rongeurs</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/litiereRongeur.jpg" />
+          <a href=".....">Bac a Litiere pour Rongeurs</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/maisonLapinSourisHamster.jpg" />
+          <a href=".....">Maison en bois pour Lapin, Souris et Hamster</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+
+        <div> <img src="public/images/accessoire/maisonRatSouris.jpg" />
+          <a href=".....">Maison pour Rats et Souris</a> <br />
+           Decription produit
+           Le Prix
+        </div>
+        -->
     </div>
 
     <div id="cartBlock">
-
+      zefzfz
     </div>
+
+  </div>
 </div>
+
+
 <?php $content = ob_get_clean(); ?>
 
 <?php require('template.php'); ?>
