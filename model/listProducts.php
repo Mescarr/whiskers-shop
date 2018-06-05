@@ -1,8 +1,10 @@
 <?php
+  //Entrées: Nom de la catégorie, Nom du produit, Prix
   function listproduct($categoryName,$name,$price){
 
     //Connection à MySQL
-    $bdd = new PDO();
+    $manager = new Manager;
+    $manager ->connect_bdd();
 
     //Requete recherche dependant du nom de produit
     $requete = "SELECT * FROM ws_product WHERE p_name LIKE :name";
@@ -33,5 +35,9 @@
       $tableau_produit[] = new Product($ligne);
     }
 
-    return $tableau_produit
+    //Fermeture de connexion
+    $bdd->closeCursor();
+
+    //Sortie: Tableau d'objet Produit
+    return $tableau_produit;
   }
