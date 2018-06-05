@@ -1,0 +1,83 @@
+/* Main elements */
+
+body {
+    padding: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Aileron';
+}
+
+#listProductsBlock {
+  display: inline-block;
+  width: 100%;
+}
+
+#headerBlock{
+  display: flex;
+}
+
+#bannerBlock{
+  background-color: purple;
+  border: 1px solid pink;
+  display: inline-block;
+  width: 75%;
+  margin-right: 5%;
+}
+
+#banner{
+}
+
+/* Login */
+
+#loginBlock {
+  background-color: beige;
+  width: 20%;
+  height: 100px;
+  display: inline-block;
+  position: fixed;
+  right: 2%;
+  margin-bottom: 5px;
+}
+
+#login {
+  text-align: right;
+  float: right;
+  text-decoration: none;
+  width: 78%;
+  height: 45px;
+  font-size: 1.5em;
+  cursor: pointer;
+  text-shadow: 0 1px 1px #333;
+  color: #fff;
+  font-family: "Aileron", sans-serif;
+  background-color: #99cb71;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+#login:a {
+  text-decoration: none;
+}
+
+#bodyBlock{
+  display: flex;
+}
+
+#listProducts {
+  background-color: green;
+  display: inline-block;
+  width: 75%;
+  margin-right: 5%;
+  margin-top: 2%;
+  height: 200px;
+}
+
+#cartBlock {
+  background-color: red;
+  width: 20%;
+  display: inline-block;
+  height: 500px;
+  position: fixed;
+  right: 2%;
+}
