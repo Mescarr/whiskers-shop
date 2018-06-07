@@ -5,6 +5,19 @@
 ?>
 
 <?php ob_start(); ?>
+
+<?php 
+  if (isset($_GET['auth'])) {
+    if ($_GET['auth'] == 'error') {
+      ?>
+        <div class="error_block">
+          <p>Les identifiants sont incorrects.</p>
+        </div>
+      <?php
+    }
+  }
+?>
+
 <div class="connection_block">
 
     <form method="post" action="?action=login" id="login_form">
@@ -18,7 +31,7 @@
 
       <div class="inputForm">
         <label>Mot de passe</label> <br />
-        <input type="password" name="pass" id="password" required="required"/>
+        <input type="password" name="password" id="password" required="required"/>
       </div>
 
       <label for="remember"><input type="checkbox" name="remember" id="remember" />Se souvenir de moi</label> <br />

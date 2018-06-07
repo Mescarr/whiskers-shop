@@ -20,6 +20,23 @@ body {
          url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.svg#BebasNeue') format('svg');
 }
 
+.error_block {
+    background-color: #C63D3D;
+    position: fixed;
+    width: 302px;
+    padding: 10px;
+    left: 50%;
+    margin-left: -161px;
+    top: -20px;
+}
+
+.error_block p {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.0em;
+}
+
 #login_form{
     color: #373737;
     width: 300px;

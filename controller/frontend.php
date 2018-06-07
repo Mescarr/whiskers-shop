@@ -15,8 +15,10 @@ function login($username, $password)
 
 	$user = connectUser($username, $password);
 
-	$user_id = $user->get_id();
-	$user_username = $user->get_username();
+	if ($user) {
+		$user_id = $user->get_id();
+		$user_username = $user->get_username();
+	}
 
 	if (isset($user_id) && isset($user_username)) {
 		$_SESSION['id'] = $user_id;
@@ -26,7 +28,7 @@ function login($username, $password)
 	}
 
 	else {
-		echo "T'es mauvais !";
+		header('Location: index.php?action=login&auth=error');
 	}
 
 }
