@@ -27,6 +27,13 @@
 
     if ($resultat[0][0] == 1){
 
+      // Mise à jour de la date de dernière connexion de l'utilisateur
+      $requete = "UPDATE ws_user SET u_last_connection_datetime = NOW() WHERE u_username LIKE :username AND u_hash LIKE :hash";
+      $requete_info = $bdd->prepare($requete);
+      $requete_info -> execute(array(
+        'username' => $username,
+        'hash' => $hash));
+
       // Recuperation des informations sur l'utilisateur
       $requete = "SELECT * FROM ws_user WHERE u_username LIKE :username AND u_hash LIKE :hash";
       $requete_info = $bdd->prepare($requete);
