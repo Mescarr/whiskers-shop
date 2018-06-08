@@ -8,18 +8,6 @@ body {
     font-family: 'Aileron';
 }
 
-/* Font */
-
-@font-face {
-    font-family: 'Aileron';
-    src: url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.eot');    
-    src: url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'), 
-         url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.otf') format('otf'),
-         url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.woff') format('woff'),
-         url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.ttf') format('truetype'),
-         url('../font/aileron/aileron_regular_macroman/Aileron-Regular-webfont.svg#BebasNeue') format('svg');
-}
-
 .error_block {
     background-color: #C63D3D;
     position: fixed;

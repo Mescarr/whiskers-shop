@@ -1,7 +1,9 @@
 <?php
   $title = 'Se Connecter';
   $banner = NULL;
-  $link = '<link rel="stylesheet" href="public/css/loginFormView.css">'
+  $link = '<link rel="stylesheet" href="public/css/font.css">
+        <link rel="stylesheet" href="public/css/loginFormView.css">
+  ';
 ?>
 
 <?php ob_start(); ?>

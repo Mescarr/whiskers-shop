@@ -1,7 +1,9 @@
 <?php
   $title = 'Whiskers Shop';
   $banner = 'public/images/banderole.jpg';
-  $link = '<link rel="stylesheet" href="public/css/listProductsView.css">';
+  $link = '<link rel="stylesheet" href="public/css/font.css">
+        <link rel="stylesheet" href="public/css/listProductsView.css">
+  ';
 ?>
 
 <?php ob_start(); ?>
@@ -16,8 +18,8 @@
         <?php
           if(checkSession()) {
 
-              echo '<p>' . $_SESSION['username'] . '</p>';
-              echo '<p><a href="?action=logout">Se déconnecter</a></p>';
+              echo '<p id="logout"><a href="?action=logout">Déconnexion</a></p>';
+              echo '<p id="username">' . $_SESSION['username'] . '</p>';
           }
           else{
             ?>
@@ -267,8 +269,118 @@
     </div>
 
     <div id="cartBlock">
-      zefzfz
+      <div id="cartTitleBlock">
+        <hr />
+        <p id="cartTitle">Panier</p>
+      </div>
+
+      <div id="cartBlockList">
+
+        <div id="cartList">
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière pour chat</div>
+               <div class="price">999.99€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière</div>
+               <div class="price">0.63€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière pour chat</div>
+               <div class="price">999.99€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière</div>
+               <div class="price">0.63€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière pour chat</div>
+               <div class="price">999.99€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière</div>
+               <div class="price">0.63€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière pour chat</div>
+               <div class="price">999.99€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière</div>
+               <div class="price">0.63€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière pour chat</div>
+               <div class="price">999.99€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière</div>
+               <div class="price">0.63€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière pour chat</div>
+               <div class="price">999.99€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière</div>
+               <div class="price">0.63€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière pour chat</div>
+               <div class="price">999.99€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière</div>
+               <div class="price">0.63€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière pour chat</div>
+               <div class="price">999.99€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière</div>
+               <div class="price">0.63€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière pour chat</div>
+               <div class="price">999.99€</div>
+           </div>
+           <div class="product">
+               <div class="quantity">999x</div>
+               <div class="name">Litière</div>
+               <div class="price">0.63€</div>
+           </div>
+        </div>
+      </div>
+
+    <div id="totalCartPriceBlock">
+      <div id="totalCartPrice">
+        <p id="totalPriceTitle">Prix total</p>
+        <p id="totalPrice">200.00€</p>
+      </div>
     </div>
+
+    <div id="orderBlock">
+      <p id="order"><a href="?action=order">Commander</a></p>
+    </div>
+  </div>
 
   </div>
 </div>
