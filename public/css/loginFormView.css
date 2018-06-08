@@ -5,7 +5,7 @@ body {
     /* pushed halfway up viewport */
     transform: translateY(-50%);
     /* pulled from half of his own height */
-    font-family: 'Aileron';
+    font-family: 'Aileron', sans-serif;
 }
 
 .error_block {
@@ -41,7 +41,7 @@ h3 {
     text-align: center;
     color: #373737;
     text-transform: uppercase;
-    font-family: "Aileron", sans-serif;  
+    font-family: 'Aileron', sans-serif;  
     letter-spacing: 1.5px;
     font-size: 1.8em;
     line-height: 15px; 
@@ -62,7 +62,7 @@ input {
 
 input[type=text],
 input[type=password] {
-    font-family: "Aileron", sans-serif;
+    font-family: 'Aileron', sans-serif;
     width: 60%;
     height: 20px;
     padding: 0 6px;
@@ -81,7 +81,7 @@ input[type=submit] {
     cursor: pointer;
     text-shadow: 0 1px 1px #333;
     color: #fff;
-    font-family: "Aileron", sans-serif;
+    font-family: 'Aileron', sans-serif;
     background-color: #99cb71;
     margin-top: 15px;
     margin-bottom: 5px;

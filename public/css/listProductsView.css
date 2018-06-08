@@ -4,7 +4,7 @@ body {
     padding: 0;
     margin-left: 2%;
     margin-right: 2%;
-    font-family: 'Aileron';
+    font-family: 'Aileron', sans-serif;
 }
 
 #listProductsBlock {
@@ -238,4 +238,64 @@ body {
   margin-right: 5%;
   margin-top: 2%;
   height: 200px;
+}
+
+#searchBlock {
+  background-color: #99cb71;
+  color: white;
+  text-shadow: 0 1px 1px #333;
+}
+
+#searchBlock input, #searchBlock select, #searchBlock option {
+  font-family: 'Aileron', sans-serif;
+  padding: 0 6px;
+}
+
+#search1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#formCategoryBlock {
+  display: inline-block;
+}
+
+#formSearchBlock {
+  display: inline-block;
+}
+
+#formPriceBlock {
+  display: inline-block;
+}
+
+#search2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#formRangePriceBlock {
+  display: inline-block;
+}
+
+#searchButton {
+  cursor: pointer;
+  height: 30px;
+  width: 15%;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  background-color: #B5EF86;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border: 1px solid white;
+  transition: all 0.2s ease-out;
+  text-shadow: 0 1px 1px #333;
+}
+
+#searchButton:hover {
+  color: #99cb71;
+  background-color: white;
+  border: 1px solid #B5EF86;
+  text-shadow: none;
 }
