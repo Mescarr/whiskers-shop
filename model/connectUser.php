@@ -9,7 +9,6 @@
     $bdd = $manager -> connect_bdd();
 
     //Test de fonctionnement
-      echo "Connecté <br><br>";
 
     //Verification du nom d'utilisateur et mot de passe
     $requete = "SELECT COUNT(u_id) FROM ws_user WHERE u_username LIKE :username AND u_hash LIKE :hash";
@@ -42,7 +41,6 @@
         'hash' => $hash));
 
       $tableau = $requete_info->fetch();
-
       // Création d'un objet utilisateur comportant ses informations et son panier
       require 'User.class.php';
       $utilisateur = new User($tableau);
@@ -54,7 +52,6 @@
         echo $utilisateur -> get_hash();
         echo $utilisateur -> get_registration_datetime();
         echo $utilisateur -> get_last_connection_datetime();
-
 
         echo '<br><br>Affichage du Tableau résultant de la requete<br>';
         var_dump($tableau);
@@ -68,3 +65,12 @@
 
     else {  }
   }
+
+$tab_prod = array("p_id" => 1255, "p_fk_category_id" => 12,"p_name" => "produit test","p_price" => 10000, "p_description" => "blabla", "p_characteristic" => "carac", "p_added_datetime" => '2008-50-30',0 => 1255, 1 => 12,2 => "produit test",3 => 10000, 4 => "blabla", 5 => "carac", 6 => '2008-50-30');
+$user = connectUser('user1','pass1');
+require 'Product.class.php';
+$product = new Product($tab_prod);
+$user -> add_product($product,10);
+echo '<br><br>Panier<br><br>';
+$panier = $user -> update_cart();
+print_r($panier);
