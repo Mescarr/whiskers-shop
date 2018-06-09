@@ -2,7 +2,10 @@
   $title = 'Whiskers Shop';
   $banner = 'public/images/banderole.jpg';
   $link = '<link rel="stylesheet" href="public/css/font.css">
-        <link rel="stylesheet" href="public/css/listProductsView.css">
+        <link rel="stylesheet" href="public/css/frontend/listProductsView.css">
+        <link rel="stylesheet" href="public/css/frontend/includes/headerInclude.css">
+        <link rel="stylesheet" href="public/css/frontend/includes/searchInclude.css">
+        <link rel="stylesheet" href="public/css/frontend/includes/cartInclude.css">
   ';
 ?>
 

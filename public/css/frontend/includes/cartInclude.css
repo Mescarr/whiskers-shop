@@ -1,0 +1,129 @@
+/* Cart */
+
+#cartBlock {
+  background-image: linear-gradient(#99cb71 0%, #B5EF86 20%);
+  width: 20%;
+  display: inline-block;
+  height: 500px;
+  position: fixed;
+  right: 2%;
+}
+
+#cartTitleBlock {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cartTitle{
+  color: white;
+  text-shadow: 0 1px 1px #333;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#cartBlockList {
+  width: 90%;
+  height: 67%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 2px solid white;
+  background-color: white;
+}
+
+#cartList {
+  background-color: white;
+}
+
+#cartList .product {
+  border-bottom: 1px dotted #99cb71;
+  padding-top: 5px;
+}
+
+.quantity, .name, .price {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quantity {
+  width: 16%;
+}
+
+.name {
+  width: 55%;
+}
+
+.price {
+  text-align: right;
+  width: 26%;
+}
+
+#totalCartPriceBlock {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+#totalCartPrice {
+  margin: 0;
+  padding: 0;
+  border: 2px solid white;
+  background-color: white;
+}
+
+#totalPriceTitle {
+  display: inline-block;
+  width: 36%;
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 0 1px 1px #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  background-color: #99cb71;
+}
+
+#totalPrice {
+  display: inline-block;
+  width: 60%;
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  text-align: right;
+}
+
+#order {
+  display: block;
+  text-align: center;
+  margin-top: 17.5px;
+}
+
+#order a {
+  background-color: #99cb71;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border: 1px solid white;
+  transition: all 0.2s ease-out;
+  text-shadow: 0 1px 1px #333;
+}
+
+#order a:hover {
+  color: #99cb71;
+  background-color: white;
+  border: 1px solid #99cb71;
+  text-shadow: none;
+}
