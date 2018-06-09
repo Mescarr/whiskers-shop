@@ -30,7 +30,7 @@
             <div class="productLine">
 
               <div class="productLine1">
-                <p class="productName"><a href="?action=product&amp;id=">Carnilove pour Chat</a></p>
+                <p class="productName"><a href="?action=product&amp;id=0">Carnilove pour Chat</a></p>
                 <p class="productPrice">54€<sup>00</sup></p>
               </div>
 
@@ -44,7 +44,7 @@
               <div class="productLine3">
                 <p class="productLine3Text">
                   <form method="POST" action="?action=listProducts" class="productForm">
-                  <a href="?action=product&amp;id=">plus de détails »</a>
+                  <a href="?action=product&amp;id=0">plus de détails »</a>
                     <input type="number" min="1" max="999" step="1" value="1" />
                     <input type="submit" value="Ajouter au panier" id="addCartButton" />
                   </form>

@@ -1,5 +1,22 @@
 <?php
 
+/* Session */
+
+function checkSession() {
+	if(isset($_SESSION['id']) && $_SESSION['username']) {
+		return True;
+	}
+	else {
+		return False;
+	}
+}
+
+function destroySession() {
+	session_destroy();
+}
+
+/* login page */
+
 function loginForm()
 {
 	require_once('view/frontend/loginFormView.php');
@@ -31,19 +48,14 @@ function login($username, $password)
 
 }
 
+/* listProducts page */
+
 function listProducts() {
 	require_once('view/frontend/listProductsView.php');
 }
 
-function checkSession() {
-	if(isset($_SESSION['id']) && $_SESSION['username']) {
-		return True;
-	}
-	else {
-		return False;
-	}
-}
+/* product page */
 
-function destroySession() {
-	session_destroy();
+function product($id_product) {
+	require_once('view/frontend/productView.php');
 }

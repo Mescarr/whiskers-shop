@@ -20,6 +20,14 @@ if (isset($_GET['action'])) {
             loginForm();
         }
     }
+    elseif ($_GET['action'] == 'product') {
+        if (isset($_GET['id']) && ctype_digit($_GET['id'])) {
+            product($_GET['id']);
+        }
+        else {
+            header('Location: index.php?action=listProducts');
+        }
+    }
     elseif ($_GET['action'] == 'admin') {
         if (checkSession()) {
             header('Location: index.php?action=adminPanel'); // Faille potentielle en utilisant le checkSession() user pour passer sur Panel Admin
