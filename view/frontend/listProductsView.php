@@ -62,7 +62,7 @@
 
             <div id="search2">
               <p id="formRangePriceBlock">
-                Min : <input type="number" min="0" max="999999" step="1" value ="0" />€ -
+                Min : <input type="number" min="0" max="999999" step="1" value ="0" />€
                 Max : <input type="number" min="0" max="999999" step="1" value="999999" />€
               </p>
 
@@ -70,234 +70,44 @@
             </div>
           </form>
         </div>
-        <!--
-         Croquettes
-        <div> <img src="carniloveChat.jpg" />
-          <a href=".....">Carnilove pour Chat</a> <br />
-           Decription produit
-           Le Prix
+
+        <div id="listProductsBody">
+          <div class="product">
+
+            <div class="productImage">
+              <img src="public/images/croquettes/carniloveChat.jpg" alt="" />
+            </div>
+
+            <div class="productLine">
+
+              <div class="productLine1">
+                <p class="productName"><a href="?action=product&amp;id=">Carnilove pour Chat</a></p>
+                <p class="productPrice">54€<sup>00</sup></p>
+              </div>
+
+              <div class="productLine2">
+                <p>
+                  <span class="ttcText">Prix TTC,</span><br />
+                  <span class="noteShippingCosts">Hors frais d'envoi</span>
+                </p>
+              </div>
+
+              <div class="productLine3">
+                <p class="productLine3Text">
+                  <form method="POST" action="?action=listProducts" class="productForm">
+                  <a href="?action=product&amp;id=">plus de détails »</a>
+                    <input type="number" min="1" max="999" step="1" value="1" />
+                    <input type="submit" value="Ajouter au panier" id="addCartButton" />
+                  </form>
+
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
-
-        <div> <img src="carniloveChien.jpg" />
-          <a href=".....">Carnilove pour Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="orijenChat.jpg" />
-          <a href=".....">Orijen pour Chat</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="carniloveChien.jpg" />
-          <a href=".....">Orijen pour Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="trueInstinctChat.jpg" />
-          <a href=".....">True Instinct pour Chat</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="trueInsinctChien.jpg" />
-          <a href=".....">True Instinct pour Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="tasteWildChat.jpg" />
-          <a href=".....">Taste of the Wild pour Chat</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="tasteWildChien.jpg" />
-          <a href=".....">Taste of the Wild pour Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="bunnyReveHamster.jpg" />
-          <a href=".....">Bunny Reve pour Hamster</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="cuniLapin.jpg" />
-          <a href=".....">Cuni Complete Adulte pour Lapin</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="sssRat.jpg" />
-          <a href=".....">Supreme Science Selective pour Rats</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="sssSouris.jpg" />
-          <a href=".....">Supreme Science Selective pour Souris</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-
-        Hygiene
-        <div> <img src="public/images/hygiene/brosseChat.jpg" />
-          <a href=".....">Brosse pour Chat</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/hygiene/brosseChien.jpg" />
-          <a href=".....">Brosse pour Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/hygiene/peigneChat.jpg" />
-          <a href=".....">Peigne pour Chat</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/hygiene/peigneChien.jpg" />
-          <a href=".....">Peigne pour Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/hygiene/antipuceChat.jpg" />
-          <a href=".....">Anti-Puces pour Chat</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/hygiene/antipuceChien.jpg" />
-          <a href=".....">Anti-Puces pour Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/hygiene/LitiereChat.jpg" />
-          <a href=".....">Litiere pour Chat</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/hygiene/sacFraicheur.jpg" />
-          <a href=".....">Sacs Fraicheur pour Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/hygiene/litiereRongeur.jpg" />
-          <a href=".....">Cuni Complete Adulte pour Lapin</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/hygiene/sableBain.jpg" />
-          <a href=".....">Sable de Bain pour Hamster</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/hygiene/brosseRongeur.jpg" />
-          <a href=".....">Brosse pour Rongeurs</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/hygiene/coupeGriffe.jpg" />
-          <a href=".....">Coupe Griffe pour Rongeurs</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-
-         Accessoires
-        <div> <img src="public/images/accessoire/laisse.jpg" />
-          <a href=".....">Laisse pour Chat et Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/collierChien.jpg" />
-          <a href=".....">Collier pour Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/harnaisChat.jpg" />
-          <a href=".....">Harnais pour Chat</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/harnaisChien.jpg" />
-          <a href=".....">Harnais pour Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/gamelleChat.jpg" />
-          <a href=".....">Gamelle pour Chat</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/gamelleChien.jpg" />
-          <a href=".....">Gamelle pour Chien</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/griffoire.jpg" />
-          <a href=".....">Griffoire pour Chat</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/litiereChat.jpg" />
-          <a href=".....">Bac a Litiere pour Chat</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/gamelleRongeur.jpg" />
-          <a href=".....">Gamelle pour Rongeurs</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/biberonRongeur.jpg" />
-          <a href=".....">Biberon pour Rongeurs</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/litiereRongeur.jpg" />
-          <a href=".....">Bac a Litiere pour Rongeurs</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/maisonLapinSourisHamster.jpg" />
-          <a href=".....">Maison en bois pour Lapin, Souris et Hamster</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-
-        <div> <img src="public/images/accessoire/maisonRatSouris.jpg" />
-          <a href=".....">Maison pour Rats et Souris</a> <br />
-           Decription produit
-           Le Prix
-        </div>
-        -->
     </div>
 
     <div id="cartBlock">
@@ -312,92 +122,7 @@
            <div class="product">
                <div class="quantity">999x</div>
                <div class="name">Litière pour chat</div>
-               <div class="price">999.99€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière</div>
-               <div class="price">0.63€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière pour chat</div>
-               <div class="price">999.99€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière</div>
-               <div class="price">0.63€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière pour chat</div>
-               <div class="price">999.99€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière</div>
-               <div class="price">0.63€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière pour chat</div>
-               <div class="price">999.99€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière</div>
-               <div class="price">0.63€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière pour chat</div>
-               <div class="price">999.99€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière</div>
-               <div class="price">0.63€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière pour chat</div>
-               <div class="price">999.99€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière</div>
-               <div class="price">0.63€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière pour chat</div>
-               <div class="price">999.99€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière</div>
-               <div class="price">0.63€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière pour chat</div>
-               <div class="price">999.99€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière</div>
-               <div class="price">0.63€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière pour chat</div>
-               <div class="price">999.99€</div>
-           </div>
-           <div class="product">
-               <div class="quantity">999x</div>
-               <div class="name">Litière</div>
-               <div class="price">0.63€</div>
+               <div class="price">999€<sup>99</sup></div>
            </div>
         </div>
       </div>
