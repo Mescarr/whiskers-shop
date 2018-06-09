@@ -1,7 +1,5 @@
 <?php
 
-//require_once('model.php');
-
 function loginForm()
 {
 	require_once('view/frontend/loginFormView.php');
