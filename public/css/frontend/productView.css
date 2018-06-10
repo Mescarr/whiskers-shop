@@ -93,11 +93,6 @@ input[type="number"] {
   font-size: 1.2em;
 }
 
-.product .productName a {
-  text-decoration: none;
-  color: black;
-}
-
 .product .productPrice {
   display: inline-block;
   float: right;

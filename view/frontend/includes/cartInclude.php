@@ -1,19 +1,20 @@
 <div id="cartBlock">
-    <div id="cartTitleBlock">
-      <hr />
-      <p id="cartTitle">Panier</p>
+  <div id="cartTitleBlock">
+    <hr />
+    <p id="cartTitle">Panier</p>
+  </div>
+
+  <div id="cartBlockList">
+
+    <div id="cartList">
+       <div class="product">
+           <div class="quantity">999x</div>
+           <div class="name">Litière pour chat</div>
+           <div class="price">999€<sup>99</sup></div>
+       </div>
     </div>
 
-    <div id="cartBlockList">
-
-      <div id="cartList">
-         <div class="product">
-             <div class="quantity">999x</div>
-             <div class="name">Litière pour chat</div>
-             <div class="price">999€<sup>99</sup></div>
-         </div>
-      </div>
-    </div>
+  </div>
 
   <div id="totalCartPriceBlock">
     <div id="totalCartPrice">

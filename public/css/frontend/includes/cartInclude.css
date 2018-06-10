@@ -4,15 +4,21 @@
   background-image: linear-gradient(#99cb71 0%, #B5EF86 20%);
   width: 20%;
   display: inline-block;
-  height: 500px;
   position: fixed;
+  top: 108px;
   right: 2%;
+  height: calc(100vh - 113px);
 }
 
 #cartTitleBlock {
   width: 90%;
+  height: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#cartTitleBlock hr {
+  margin: 0;
 }
 
 #cartTitle{
@@ -21,13 +27,13 @@
   text-align: center;
   font-size: 1.2em;
   margin: 0;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  padding: 8px 0 8px 0;
+  height: 100%;
 }
 
 #cartBlockList {
   width: 90%;
-  height: 67%;
+  height: calc(100% - 157px);
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
@@ -70,6 +76,7 @@
 #totalCartPriceBlock {
   display: block;
   width: 90%;
+  height: 46px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
@@ -108,7 +115,7 @@
 #order {
   display: block;
   text-align: center;
-  margin-top: 17.5px;
+  margin: 17px 0 17px 0;
 }
 
 #order a {

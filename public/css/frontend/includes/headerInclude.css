@@ -2,11 +2,11 @@
 
 #headerBlock{
   display: flex;
+  height: 94px;
 }
 
 #bannerBlock{
   background-color: purple;
-  border: 1px solid pink;
   display: inline-block;
   width: 75%;
   margin-right: 5%;
@@ -24,7 +24,6 @@
   display: inline-block;
   position: fixed;
   right: 2%;
-  margin-bottom: 5px;
 }
 
 #login {

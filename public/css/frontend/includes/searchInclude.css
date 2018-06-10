@@ -4,6 +4,7 @@
   background-color: #99cb71;
   color: white;
   text-shadow: 0 1px 1px #333;
+  height: 106px;
 }
 
 #searchBlock select, #searchBlock option {

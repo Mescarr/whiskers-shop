@@ -7,7 +7,7 @@
            <option value="Tous"></option>
            <option value="Chien">Chien</option>
            <option value="Chat">Chat</option>
-           <option value="Rongeurs">Rongeurs</option>
+           <option value="Rongeurs">Rongeur</option>
          </select>
       </p>
       <p id="formCategoryBlock">

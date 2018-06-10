@@ -30,7 +30,7 @@
             <div class="productLine">
 
               <div class="productLine1">
-                <p class="productName"><a href="?action=product&amp;id=">Carnilove pour Chat</a></p>
+                <p class="productName">Carnilove pour Chat</p>
                 <p class="productPrice">54€<sup>00</sup></p>
               </div>
 
