@@ -48,6 +48,24 @@ class User
     $requete_prepare -> execute();
   }
 
+  //Methode Ajout d'un produit au panier de l'utilisateur
+  public function del_product($id_product,$id_user){
+
+    //Connection à MySQL
+    //require 'Manager.class.php';
+    $manager_user = new Manager;
+    $bdd = $manager_user -> connect_bdd();
+
+    //Requete qui permet de suprimer le produit de la table panier
+    $requete = "DELETE FROM ws_cart WHERE ";
+
+    $requete .= "(ws_cart.c_fk_user_id = ".$id_user.") AND (ws_cart.c_fk_product_id = ".$id_product.")";
+
+    //Execution de la requete en prepare
+    $requete_prepare = $bdd -> prepare($requete);
+    $requete_prepare -> execute();
+  }
+
   // Methode Mise à jour du Panier utilisateur
   public function update_cart(){
 

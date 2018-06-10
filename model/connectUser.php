@@ -50,3 +50,5 @@
 
     else {  }
   }
+
+$user = connectUser('user1','pass1');
