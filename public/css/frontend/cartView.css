@@ -1,0 +1,217 @@
+body {
+    padding: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Aileron', sans-serif;
+}
+
+input {
+	outline: none;
+}
+
+#cartBlock {
+	width: calc(75% - 20px);
+	margin-top: 2%;
+	background-color: #99cb71;
+	border: 10px solid #99cb71;
+}
+
+#cartBlock a {
+	text-decoration: none;
+	color: black;
+}
+
+#cartTitle {
+	text-align: center;
+	font-size: 1.8em;
+	margin: 0 0 10px 0;
+	color: white;
+  	text-shadow: 0 1px 1px #333;
+}
+
+.product {
+	padding: 5px 1% 5px 4%;
+	height: 75px;
+	background-color: white;
+	border-bottom: 1px solid #99cb71;
+	position: relative;
+}
+
+.product img {
+	max-height: 75px;
+  	max-width: 75px;
+  	margin-right: 5%;
+}
+
+.product .nameProduct {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	width: 45%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.product .quantityProduct {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 25%;
+	text-align: center;
+}
+
+.product .quantityProduct input[type="number"] {
+  width: 25%;
+}
+
+.product .quantityProduct input[type="submit"] {
+  cursor: pointer;
+  height: 30px;
+  width: 50%;
+  font-size: 1em;
+  display: inline-block;
+  text-align: center;
+  background-color: #99cb71;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border: 1px solid white;
+  transition: all 0.2s ease-out;
+  text-shadow: 0 1px 1px #333;
+}
+
+.product .quantityProduct input[type="submit"]:hover {
+  color: #99cb71;
+  background-color: white;
+  border: 1px solid #99cb71;
+  text-shadow: none;
+}
+
+.product .priceProduct {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	width: 10%;
+	text-align: center;
+	float: right;
+	margin-right: 5%;
+}
+
+.product .priceProduct .price {
+	font-size: 1.4em;
+}
+
+.product .delete a {
+	text-decoration: none;
+}
+
+.product .delete {
+	display: inline-block;
+	vertical-align: top;
+	background-color: #C63D3D;
+	color: white;
+	margin: 0;
+	padding: 10px;
+  	transition: all 0.2s ease-out;
+  	position: absolute;
+  	top: 10px;
+  	right: 10px;
+}
+
+.product .delete:hover {
+	background-color: #C11515;
+}
+
+.product .delete:active {
+	background-color: white;
+}
+
+#totalCartPriceBlock {
+  display: inline-block;
+  width: 30%;
+  max-width: 300px;
+  float: right;
+  margin-top: 5px;
+}
+
+#totalCartPrice {
+  margin: 0;
+  padding: 0;
+  border: 2px solid white;
+  background-color: white;
+}
+
+#totalPriceTitle {
+  display: inline-block;
+  width: 36%;
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 0 1px 1px #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  background-color: #99cb71;
+}
+
+#totalPrice {
+  display: inline-block;
+  width: 60%;
+  font-size: 1.5em;
+  margin: 0;
+  text-align: right;
+}
+
+#deleteCart {
+ 	display: inline-block;
+ 	width: 20%;
+  	max-width: 200px;
+ 	text-align: center;
+ 	margin-bottom: 50px;
+ 	vertical-align: top;
+	position: relative;
+}
+
+#deleteCart p {
+	background-color: #C63D3D;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border: 1px solid white;
+	transition: all 0.2s ease-out;
+	text-shadow: 0 1px 1px #333;
+	margin: 0;
+}
+
+#deleteCart p:hover {
+  	background-color: #C11515;
+  	border: 1px solid #B5EF86;
+}
+
+#deleteCart p:active {
+	background-color: white;
+}
+
+#validCart {
+ 	text-align: center;
+}
+
+#validCart p {
+	background-color: #B5EF86;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border: 1px solid white;
+	transition: all 0.2s ease-out;
+	text-shadow: 0 1px 1px #333;
+	margin: 0;
+}
+
+#validCart p:hover {
+  	color: #99cb71;
+	background-color: white;
+	border: 1px solid #B5EF86;
+	text-shadow: none;
+}
+

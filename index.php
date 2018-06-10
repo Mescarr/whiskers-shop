@@ -28,6 +28,14 @@ if (isset($_GET['action'])) {
             header('Location: index.php?action=listProducts');
         }
     }
+    elseif ($_GET['action'] == 'order') {
+        if (checkSession()) {
+            cart();
+        }
+        else {
+            header('Location: index.php?action=listProducts');
+        }
+    }
     elseif ($_GET['action'] == 'admin') {
         if (checkSession()) {
             header('Location: index.php?action=adminPanel'); // Faille potentielle en utilisant le checkSession() user pour passer sur Panel Admin

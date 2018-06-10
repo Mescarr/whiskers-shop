@@ -59,3 +59,9 @@ function listProducts() {
 function product($id_product) {
 	require_once('view/frontend/productView.php');
 }
+
+/* cart page */
+
+function cart() {
+	require_once('view/frontend/cartView.php');
+}
