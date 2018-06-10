@@ -32,7 +32,7 @@ class User
     //Requete qui permet d'ajouter le produit à la table panier
     $requete = "INSERT INTO ws_cart VALUES "."(";
 
-    $requete .= '130'.',';
+    $requete .= rand(1,5000).',';
     $requete .= $this->info_user["u_id"].",";
     $requete .= $produit -> get_id().",";
     $requete .= $quantity.",";
@@ -57,8 +57,8 @@ class User
     $bdd = $manager_user -> connect_bdd();
 
     // Requete qui permet de recuperer le panier de l'utilisateur
-    $requete = "SELECT C.c_fk_product_id, C.c_quantity, P.p_price FROM ws_cart ALIAS C ws_product ALIAS P ";
-    $requete .= "WHERE (C.c_fk_user_id = ".$this->info_user["u_id"].")"." AND (C.c_fk_product_id = P.p_id);";
+    $requete = "SELECT DISTINCT C.c_fk_product_id, C.c_quantity, P.p_price FROM ws_cart C, ws_product P ";
+    $requete .= "WHERE (C.c_fk_user_id = ".$this->info_user["u_id"].")"." AND (C.c_fk_product_id = P.p_id)";
 
     // Test Fonctionnement
     echo $requete;
@@ -66,8 +66,9 @@ class User
     //Execution de la requete en prepare
     $requete_prepare = $bdd -> prepare($requete);
     $requete_prepare -> execute();
-    $panier = $requete_prepare -> fetch();
-    print_r($panier);
+    $panier = $requete_prepare -> fetchAll(PDO::FETCH_ASSOC);
+
+    // Sortie: Tableau de tous les produits appartenant au panier de l'utilisateur
     return $panier;
   }
 
