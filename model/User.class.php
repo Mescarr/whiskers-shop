@@ -92,10 +92,6 @@ class User
 
   //Constructeur
   function __construct($ligne) {
-    $this->info_user["u_id"] = $ligne["u_id"];
-    $this->info_user["u_username"] = $ligne["u_username"];
-    $this->info_user["u_hash"] = $ligne["u_hash"];
-    $this->info_user["u_registration_datetime"] = $ligne["u_registration_datetime"];
-    $this->info_user["u_last_connection_datetime"] = $ligne["u_last_connection_datetime"];
+    $this->info_user = $ligne;
   }
 }

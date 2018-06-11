@@ -7,6 +7,9 @@ class Product
   //Methode get_id
   public function get_id(){ return $this->info_produit["p_id"]; }
 
+  //Methode get_species
+  public function get_species(){ return $this->info_produit["p_fk_species_id"]; }
+
   //Methode get_category
   public function get_category(){ return $this->info_produit["p_fk_category_id"]; }
 

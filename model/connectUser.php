@@ -8,8 +8,6 @@
     $manager = new Manager;
     $bdd = $manager -> connect_bdd();
 
-    //Test de fonctionnement
-
     //Verification du nom d'utilisateur et mot de passe
     $requete = "SELECT COUNT(u_id) FROM ws_user WHERE u_username LIKE :username AND u_hash LIKE :hash";
 
@@ -50,5 +48,3 @@
 
     else {  }
   }
-
-$user = connectUser('user1','pass1');
