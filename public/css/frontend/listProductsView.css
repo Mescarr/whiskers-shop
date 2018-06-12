@@ -144,3 +144,7 @@ input[type="number"] {
   border: 1px solid #99cb71;
   text-shadow: none;
 }
+
+#no_result {
+  text-align: center;
+}

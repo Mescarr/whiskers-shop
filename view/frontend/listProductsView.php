@@ -21,40 +21,58 @@
         <?php require_once('includes/searchInclude.php'); ?>
 
         <div id="listProductsBody">
-          <div class="product">
 
-            <div class="productImage">
-              <img src="public/images/croquettes/carniloveChat.jpg" alt="" />
-            </div>
+          <?php 
 
-            <div class="productLine">
+            if(isset($arrayProducts)) {
 
-              <div class="productLine1">
-                <p class="productName"><a href="?action=product&amp;id=0">Carnilove pour Chat</a></p>
-                <p class="productPrice">54€<sup>00</sup></p>
+              foreach($arrayProducts as $product)
+              {
+              ?>
+
+              <div class="product">
+
+                <div class="productImage">
+                  <img src="public/images/<?php echo $product->get_id(); ?>.jpg" alt="" />
+                </div>
+
+                <div class="productLine">
+
+                  <div class="productLine1">
+                    <p class="productName"><a href="?action=product&amp;id=<?php echo $product->get_id(); ?>"><?php echo $product->get_name(); ?></a></p>
+                    <p class="productPrice"><?php echo $product->get_price(); ?>€</p>
+                  </div>
+
+                  <div class="productLine2">
+                    <p>
+                      <span class="ttcText">Prix TTC,</span><br />
+                      <span class="noteShippingCosts">Hors frais d'envoi</span>
+                    </p>
+                  </div>
+
+                  <div class="productLine3">
+                    <p class="productLine3Text">
+                      <form method="POST" action="?action=listProducts" class="productForm">
+                      <a href="?action=product&amp;id=<?php echo $product->get_id(); ?>">plus de détails »</a>
+                        <input type="hidden" name="idProduct" value="<?php echo $product->get_id(); ?>" />
+                        <input type="number" name="quantity" min="1" max="999" step="1" value="1" />
+                        <input type="submit" value="Ajouter au panier" id="addCartButton" />
+                      </form>
+
+                    </p>
+                  </div>
+
+                </div>
+
               </div>
 
-              <div class="productLine2">
-                <p>
-                  <span class="ttcText">Prix TTC,</span><br />
-                  <span class="noteShippingCosts">Hors frais d'envoi</span>
-                </p>
-              </div>
-
-              <div class="productLine3">
-                <p class="productLine3Text">
-                  <form method="POST" action="?action=listProducts" class="productForm">
-                  <a href="?action=product&amp;id=0">plus de détails »</a>
-                    <input type="number" min="1" max="999" step="1" value="1" />
-                    <input type="submit" value="Ajouter au panier" id="addCartButton" />
-                  </form>
-
-                </p>
-              </div>
-
-            </div>
-
-          </div>
+              <?php
+              }
+            }
+            else{
+              echo '<p id="no_result">[Aucun résultat]</p>';
+            }
+            ?>
 
         </div>
     </div>

@@ -2,7 +2,7 @@
   $title = 'Panel Admin';
   $banner = NULL;
   $link = '<link rel="stylesheet" href="public/css/font.css">
-        <link rel="stylesheet" href="public/css/loginFormView.css">
+        <link rel="stylesheet" href="public/css/frontend/loginFormView.css">
   ';
 ?>
 

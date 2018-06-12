@@ -7,7 +7,7 @@ require_once('controller/backend.php');
 
 if (isset($_GET['action'])) {
     if ($_GET['action'] == 'listProducts') {
-        listProducts();
+        getProducts();
     }
     elseif ($_GET['action'] == 'login') {
         if (checkSession()) {
@@ -37,11 +37,19 @@ if (isset($_GET['action'])) {
         }
     }
     elseif ($_GET['action'] == 'admin') {
-        if (checkSession()) {
-            header('Location: index.php?action=adminPanel'); // Faille potentielle en utilisant le checkSession() user pour passer sur Panel Admin
+        if (True /*checkAdminSession()*/) {
+            header('Location: index.php?action=gestion');
         }
         elseif (isset($_POST['username']) && isset($_POST['password'])) {
             // login() de backend
+        }
+        else {
+            loginAdminForm();
+        }
+    }
+    elseif ($_GET['action'] == 'gestion') {
+        if (True /*checkAdminSession()*/) {
+            gestion();
         }
         else {
             loginAdminForm();
